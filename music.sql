@@ -16,6 +16,6 @@ CREATE TABLE song(
 	song_id SERIAL PRIMARY KEY,
 	album_id INTEGER REFERENCES album(album_id),
 	song_name VARCHAR(250) NOT NULL,
-    track_num SMALLINT,
-    song_len INT NOT NULL
+	track_num SMALLINT,
+	song_len INT NOT NULL
 );
